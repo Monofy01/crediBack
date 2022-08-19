@@ -1,0 +1,29 @@
+### ALL
+GET http://localhost:8080/credifiel/all
+Accept: application/json
+
+### ADD
+POST http://localhost:8080/credifiel/add
+Content-Type: application/json
+
+{
+    "nombre": "brian",
+    "apellidoPaterno": "rivera",
+    "apellidoMaterno": "aguilar",
+    "activo": true
+}
+
+### DELETE
+DELETE http://localhost:8080/credifiel/delete/1
+
+### UPDATE
+PUT http://localhost:8080/credifiel/update
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nombre": "testing",
+  "apellidoPaterno": "testing",
+  "apellidoMaterno": "testing",
+  "activo": true
+}
